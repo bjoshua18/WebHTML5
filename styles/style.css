@@ -10,10 +10,21 @@
 
 html {
 	font-size: 10px;
+	/*Si el contenido se desborda, que se oculte el contenido desbordado*/
+	overflow: hidden;
 }
 
 body {
 	font-size: 1.6rem;
+	/*Añade perspectiva al elemento 3D, es para decir qué tan lejos está del usuario*/
+	perspective: 1px;
+	/*Para que los elemntos hijos preserven la transformación 3D*/
+	transform-style: preserve-3d;
+	height: 100%;
+	/*Si el contenido se desborda arriba o abajo, que se acceda al contenido desbordado con la rueda del ratón*/
+	overflow-y: scroll;
+	/*Si el contenido se desborda a izq o der, que se oculte el contenido desbordado*/
+	overflow-x: hidden;
 }
 
 /*=====  End of GLOBAL  ======*/
@@ -21,6 +32,14 @@ body {
 /*==============================
 =            HEADER            =
 ==============================*/
+
+header {
+	min-height: 100vh;
+	padding: 30vw 0 5vw;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+}
 
 header::after {
 	content: '';
@@ -31,6 +50,10 @@ header::after {
 	background-repeat: no-repeat;
 	background-position: center;
 	display: block;
+}
+
+header, header::after {
+	background: 50% 50% / cover;
 }
 
 .header-content {
