@@ -1,0 +1,51 @@
+/*==============================
+=            GLOBAL            =
+==============================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+/*=====  End of GLOBAL  ======*/
+
+/*==============================
+=            HEADER            =
+==============================*/
+
+header::after {
+	content: '';
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/home-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+}
+
+.header-content {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,.5);
+}
+
+/*=====  End of HEADER  ======*/
+
+/*============================
+=            HOME            =
+============================*/
+
+
+
+/*=====  End of HOME  ======*/
