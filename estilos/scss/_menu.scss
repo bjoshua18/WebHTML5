@@ -1,0 +1,107 @@
+.titulo {
+	display: none;
+}
+
+.menu {
+	width: 100%;
+
+	&__boton {
+		display: none;
+
+		&__label {
+			background: rgba($azul3, 0.8);
+			display: block;
+			width: 5rem;
+			height: 5rem;
+			text-align: center;
+
+			& i {
+				color: $blanco;
+				font-size: 2.6rem;
+				/* Para que el icono se centre */
+				position: relative;
+				top: calc(50% - 10px);
+			}
+
+			&:hover {
+				cursor: pointer;
+				background: $azul3;
+			}
+
+			@include desde(pc) {
+				& {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__contenedor {
+		background: rgba($azul2,0.7);
+		padding: 0;
+	}
+
+	&__item {
+		list-style-type: none;
+		text-align: center;
+		margin-top: 0.1rem;
+
+		&:hover {
+			background: $azul3;
+			color: $blanco;
+		}
+	}
+
+	&__link {
+		color: $blanco;
+		text-decoration: none;
+		display: block;
+		padding: 2rem;
+	}
+	
+	
+	@include hasta(pc) {
+		/* Para que el menú se oculte en los modos movil y tablet */
+		&__caja {
+			position: relative;
+		}
+
+		position: absolute;
+		transition: all 0.5s;
+		/* Para que el menú se oculte */
+		left: -100%;
+		z-index: 1;
+		
+		/* Para que el menú aparezca cuando el botón check esté en estado checked */
+		&__boton:checked ~ .menu {
+			left: 0;
+		}
+	}
+}
+
+@include desde(pc) {
+
+	.titulo {
+		display: initial;
+	}
+
+	.logo-menu {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap:10%;
+	}
+
+	.menu {
+		margin-left: 0;
+
+		&__contenedor {
+			margin-top: 3rem;
+			display: flex;
+		}
+
+		&__item {
+			flex-grow: 1;
+			border-top: 0;
+		}
+	}
+}

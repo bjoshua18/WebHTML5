@@ -1,0 +1,329 @@
+doctype
+
+html
+	head
+		title ProjectView
+		meta(charset="UTF-8")
+		meta(name="author" content="Byron Bustamante López")
+		meta(name="keywords" content="web, development, developer, design")
+		meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=1')
+		link(rel='stylesheet', type='text/css', href='estilos/index.css')
+		<!-- Para borrar, hay que descargar las fuentes-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		link(rel="icon" href="img/logo.png")
+
+	body
+		header#header
+			.grupo.logo-menu
+				.caja
+					h1.titulo ProjectView
+				.caja.menu__caja
+					input#boton-menu.menu__boton(type="checkbox")
+					label.menu__boton__label(for="boton-menu")
+						i.menu__boton__icono.fa.fa-bars
+							
+					nav.menu
+						ul.menu__contenedor
+							li.menu__item
+								a.menu__link(href="#") Inicio
+							li.menu__item
+								a.menu__link(href="#") Servicios
+							li.menu__item
+								a.menu__link(href="#") Nosotros
+							li.menu__item
+								a.menu__link(href="#") Precios
+							li.menu__item
+								a.menu__link(href="#") Contacto
+
+			.grupo.principal__grupo
+				.caja.principal__caja
+					.principal
+						.principal__logo.movil-40.pc-15
+							img.principal__logo__img(src="img/logo.png")
+						h2.principal__subtitulo Diseño y Desarrollo Web
+						.principal__botones
+							button.principal__botones__boton Saber más
+							button.principal__botones__boton  Contacto
+
+		section#servicios
+			.grupo
+				.caja
+					h2.section-title Servicios
+
+				.caja
+					.servicio
+						i.servicio__icon.fab.fa-dev
+						h3.servicio__title Servicio 1
+						p.servicio__description
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							| quis nostrud exercitation
+
+				.caja
+					.servicio
+						i.servicio__icon.fab.fa-dev
+						h3.servicio__title Servicio 2
+						p.servicio__description
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							| quis nostrud exercitation
+
+				.caja
+					.servicio
+						i.servicio__icon.fab.fa-dev
+						h3.servicio__title Servicio 3
+						p.servicio__description
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							| quis nostrud exercitation
+
+				.caja
+					.servicio
+						i.servicio__icon.fab.fa-dev
+						h3.servicio__title Servicio 4
+						p.servicio__description
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							| tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							| quis nostrud exercitation
+		
+		section#galeria
+			.grupo
+				.caja.galeria
+					h2.section-title Galería
+					.galeria__contenedor
+						.galeria__img
+							img(src="img/gallery/bg1.jpg")
+						.galeria__img
+							img(src="img/gallery/bg1.jpg")
+						.galeria__img
+							img(src="img/gallery/bg1.jpg")
+						.galeria__img
+							img(src="img/gallery/bg1.jpg")
+						.galeria__img
+							img(src="img/gallery/bg1.jpg")
+						.galeria__img
+							img(src="img/gallery/bg1.jpg")
+						.galeria__img
+							img(src="img/gallery/bg4.jpg")
+						.galeria__img
+							img(src="img/gallery/bg4.jpg")
+						.galeria__img
+							img(src="img/gallery/bg4.jpg")
+						.galeria__img
+							img(src="img/gallery/bg4.jpg")
+						.galeria__img
+							img(src="img/gallery/bg4.jpg")
+						.galeria__img
+							img(src="img/gallery/bg4.jpg")
+
+		section#conocenos
+			.grupo
+				.caja
+					.caracteristica__img
+						img(src="")
+
+				.caja
+					h3.section-title Conócenos un poco más
+
+					.carcteristica
+						.caracteristica__vista
+							i.caracteristica__icon
+							h4.caracteristica_title Quienes somos
+						.caracteristica__.oculto
+							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+
+					.carcteristica
+						.caracteristica__vista
+							i.caracteristica__icon
+							h4.caracteristica_title Cuales son nuestros valores
+						.caracteristica__oculto
+							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+
+					.carcteristica
+						.caracteristica__vista
+							i.caracteristica__icon
+							h4.caracteristica_title Cual es nuestra filosofía
+						.caracteristica__oculto
+							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+
+					.carcteristica
+						.caracteristica__.vista
+							i.caracteristica__icon
+							h4.caracteristica_title Cuales son nuestros objetivos
+						.caracteristica__oculto
+							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+
+		section#mision
+			.grupo
+				.caja
+					h3.section-title Enfocados en crecer tu marca 
+					h5.section-title__subtitle Creamos increíbles páginas web para tu empresa
+
+					.caracteristica
+						.caracteristica__vista
+							i.caracteristica__icon
+							p.caracteristica__description Solamente una característica
+
+					.caracteristica
+						.caracteristica__vista
+							i.caracteristica__icon
+							p.caracteristica__description Solamente una característica
+
+					.caracteristica
+						.caracteristica__vista
+							i.caracteristica__icon
+							p.caracteristica__description Solamente una característica
+
+					.caracteristica
+						.caracteristica__vista
+							i.caracteristica__icon
+							p.caracteristica__description Solamente una característica
+
+
+				.caja
+					.caracteristica__img
+						img(src="")
+
+		section#precios
+			.grupo
+				.caja
+					h3.section-title Nuestros planes
+					h5.section-title__subtitle Grandes productos a precios adaptados a ti
+
+				.caja
+					.precio
+						h4.precio__title Un tema
+						.precio__cantidad
+							.precio__cantidad__numero 59
+							.precio__cantidad__tiempo /mes
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						a.precio__boton(href="#") Comprar
+
+				.caja
+					.precio
+						h4.precio__title Un tema
+						.precio__cantidad
+							.precio__cantidad__numero 99
+							.precio__cantidad__tiempo /mes
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						a.precio__boton(href="#") Comprar
+
+				.caja
+					.precio
+						h4.precio__title Un tema
+						.precio__cantidad
+							.precio__cantidad__numero 259
+							.precio__cantidad__tiempo /año
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						.caracteristica
+							.caracteristica__vista
+								i.caracteristica__icon
+								p.caracteristica__description Solamente una característica
+
+						a.precio__boton(href="#") Comprar
+
+		<!-- Hacer el apartado de "Nuestro equipo" si da tiempo -->
+
+		section#formulario
+			.grupo
+				.caja
+					h3.section-title Envíanos tus sugerencias
+					.formulario Aquí va el formulario
+
+		footer#footer
+			.grupo
+				.caja
+					p.creditos ProyectView &copy; 2019 | Privacy Policy
+
+				.caja
+					.sociales
+						a.sociales__item.icon-facebook(href='#')
+						a.sociales__item.icon-twitter(href='#')
+						a.sociales__item.icon-youtube(href='#')
+						a.sociales__item.icon-linkedin(href='#')
+						a.sociales__item.icon-rss(href='#')

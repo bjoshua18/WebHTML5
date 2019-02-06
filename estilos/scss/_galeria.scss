@@ -1,0 +1,30 @@
+.galeria {
+	&__title {
+		text-align: center;
+		font-size: 4rem;
+		padding: 4rem;
+	}
+
+	&__contenedor {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(auto-fill,20rem);
+		grid-gap: 1rem;
+
+		@include desde-hasta(tablet, pc) {
+			& {
+				grid-template-columns: repeat(3, 1fr);
+				grid-template-rows: repeat(auto-fill, 20rem);
+				grid-gap: 1rem;
+			}
+		}
+
+		@include desde(pc) {
+			& {
+				grid-template-columns: repeat(4, 1fr);
+				grid-template-rows: repeat(auto-fill, 20rem);
+				grid-gap: 1rem;
+			}
+		}
+	}
+}

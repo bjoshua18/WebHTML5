@@ -1,0 +1,104 @@
+#header {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(#000, 0.7);
+
+	&::before {
+		background-image: url(../img/bg2.jpg);
+		background-size: cover;
+		background-position: center;
+		position: absolute;
+		content: '';
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+		z-index: -1;
+		display: block;
+		background-repeat: no-repeat;
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+.principal {
+	&>* {
+		margin-top: 2rem;
+	}
+
+	&__grupo {
+		width: 100vw;
+		height: 80vh;
+	}
+
+	&__caja {
+		position: relative;
+		/* Para posicionar el div en el centro */
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: center;
+
+
+	}
+
+	&__logo {
+		margin: 0 auto;
+		&__img {
+			object-fit: cover;
+		}
+	}
+
+	&__subtitulo {
+		font-family: $font-titulo;
+		text-transform: uppercase;
+		color: $blanco;
+	}
+
+	&__botones {
+
+		&__boton {
+			position: relative;
+			width: 15rem;
+			height: 5rem;
+			color: $blanco;
+			font-weight: 600;
+			// background: linear-gradient(darken($azul2,10%),darken($azul3,20%));
+			background: none;
+			padding: 1rem;
+			// border: none;
+			border: .3rem solid $azul3;
+			outline: none;
+			cursor: pointer;
+			font-family: $font-defecto;
+			transition: 0.4s;
+			margin: 1rem;
+			overflow: hidden;
+			
+			&:hover {
+
+				&::before {
+					animation: aaa 0.7s 1;
+					top: -40%;
+					left: -20%;
+				}
+			}
+
+			&::before {
+				content:"";
+				position: absolute;
+				width: 190%;
+				height: 300%;
+				background: $azul3;
+				transform: rotate(45deg);
+				top: 40%;
+				left: -130%;
+				z-index: -1;
+			}
+
+			&:active {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

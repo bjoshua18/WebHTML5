@@ -1,0 +1,20 @@
+// El código se ejecuta HASTA el tamaño deseado
+@mixin hasta($size){
+	@media screen and (max-width: map-get($sizes,$size) - 1){
+		@content;
+	}
+}
+
+// El código se ejecuta DESDE el tamaño deseado
+@mixin desde($size){
+	@media screen and (min-width: map-get($sizes,$size)){
+		@content;
+	}
+}
+
+// El código se ejecuta ENTRE los tamaños deseados
+@mixin desde-hasta($desde,$hasta){
+	@media screen and (min-width: map-get($sizes,$desde)) and (max-width: map-get($sizes,$hasta) - 1){
+		@content;
+	}
+}
