@@ -1,0 +1,24 @@
+#servicios {
+	width: 100vw;
+	background: rgba(#000, 0.5);
+
+	.parallax::before {
+		background-image: url(../img/gallery/bg7.jpg);
+	}
+
+	.section-title {
+		color: white;
+	}
+}
+
+.servicio {
+	text-align: center;
+
+	&__description {
+		color: $blanco;
+	}
+
+	&__icon {
+		font-size: 3.5rem;
+	}
+}

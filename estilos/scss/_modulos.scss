@@ -1,0 +1,34 @@
+/* Estilo de los títulos de las secciones */
+.section-title {
+    text-align: center;
+    margin: 4rem 5rem;
+    font-family: $font-titulo;
+    font-weight: 700;
+    font-size: 3rem;
+    border-bottom: 0.1rem solid $azul3;
+}
+
+/* Estilo de los apartados de las secciones */
+.apartado {
+	margin: 2rem 1rem;
+	padding: 2rem;
+	border-radius: 1rem;
+	color: $negro;
+	background: rgba($gris, 0.5);
+
+	&>* {
+		margin: 2rem 1rem;
+	}
+
+	& i {
+		color: $azul3;
+	}
+
+	&>h3, &>span {
+		color: $negro;
+	}
+
+	&:hover {
+		background: rgba($gris, 0.8);
+	}
+}

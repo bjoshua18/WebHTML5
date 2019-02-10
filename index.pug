@@ -13,47 +13,48 @@ html
 
 	body
 		header#header
-			.grupo.logo-menu
-				.caja
-					h1.titulo ProjectView
-				.caja.menu__caja
-					input#boton-menu.menu__boton(type="checkbox")
-					label.menu__boton__label(for="boton-menu")
-						i.menu__boton__icono.fa.fa-bars
-							
-					nav.menu
-						ul.menu__contenedor
-							li.menu__item
-								a.menu__link(href="#") Inicio
-							li.menu__item
-								a.menu__link(href="#") Servicios
-							li.menu__item
-								a.menu__link(href="#") Nosotros
-							li.menu__item
-								a.menu__link(href="#") Precios
-							li.menu__item
-								a.menu__link(href="#") Contacto
+			.parallax
+				.grupo.logo-menu
+					.caja
+						h1.titulo ProjectView
+					.caja.menu__caja
+						input#boton-menu.menu__boton(type="checkbox")
+						label.menu__boton__label(for="boton-menu")
+							i.menu__boton__icono.icon-menu
+								
+						nav.menu
+							ul.menu__contenedor
+								li.menu__item
+									a.menu__link(href="#") Inicio
+								li.menu__item
+									a.menu__link(href="#") Servicios
+								li.menu__item
+									a.menu__link(href="#") Nosotros
+								li.menu__item
+									a.menu__link(href="#") Precios
+								li.menu__item
+									a.menu__link(href="#") Contacto
 
-			.grupo.principal__grupo
-				.caja.principal__caja
-					.principal
-						.principal__logo.movil-40.pc-15
-							img.principal__logo__img(src="img/logo.png")
-						.principal__subtitulo__contenedor
-							h2.principal__subtitulo.glitched Diseño y Desarrollo Web
-							.glitch-window
+				.grupo.principal__grupo
+					.caja.principal__caja
+						.principal
+							.principal__logo.movil-40.pc-15
+								img.principal__logo__img(src="img/logo.png")
+							.principal__subtitulo__contenedor
 								h2.principal__subtitulo.glitched Diseño y Desarrollo Web
-						.principal__botones
-							button.principal__botones__boton Saber más
-							button.principal__botones__boton  Contacto
+								.glitch-window
+									h2.principal__subtitulo.glitched Diseño y Desarrollo Web
+							.principal__botones
+								button.principal__botones__boton Saber más
+								button.principal__botones__boton  Contacto
 
 		section#servicios
-			.grupo
+			.grupo.parallax
 				.caja
 					h2.section-title Servicios
 
 				.caja
-					.servicio
+					.servicio.apartado
 						i.servicio__icon.icon-clock
 						h3.servicio__title Ahorra tiempo
 						p.servicio__description
@@ -62,7 +63,7 @@ html
 							| quis nostrud exercitation
 
 				.caja
-					.servicio
+					.servicio.apartado
 						i.servicio__icon.icon-cog-alt
 						h3.servicio__title Personalizable
 						p.servicio__description
@@ -71,7 +72,7 @@ html
 							| quis nostrud exercitation
 
 				.caja
-					.servicio
+					.servicio.apartado
 						i.servicio__icon.icon-mobile
 						h3.servicio__title Mobile friendly
 						p.servicio__description
@@ -80,7 +81,7 @@ html
 							| quis nostrud exercitation
 
 				.caja
-					.servicio
+					.servicio.apartado
 						i.servicio__icon.icon-chart-line
 						h3.servicio__title Escalable
 						p.servicio__description
@@ -122,69 +123,56 @@ html
 			.grupo
 				.caja
 					.caracteristica__img
-						img(src="")
+						img(src="img/phone-propio.png")
 
-				.caja
+				.caja.nosotros
 					h3.section-title Conócenos un poco más
 
-					.carcteristica
-						.caracteristica__vista
-							i.caracteristica__icon.icon-plus
-							h4.caracteristica_title Quienes somos
-						.caracteristica__.oculto
-							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-plus
+						span.caracteristica__title Quienes somos
+						p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
 
-					.carcteristica
-						.caracteristica__vista
-							i.caracteristica__icon.icon-plus
-							h4.caracteristica_title Cuales son nuestros valores
-						.caracteristica__oculto
-							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-plus
+						span.caracteristica__title Cuales son nuestros valores
+						p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
 
-					.carcteristica
-						.caracteristica__vista
-							i.caracteristica__icon.icon-plus
-							h4.caracteristica_title Cual es nuestra filosofía
-						.caracteristica__oculto
-							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-plus
+						span.caracteristica__title Cual es nuestra filosofía
+						p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
 
-					.carcteristica
-						.caracteristica__.vista
-							i.caracteristica__icon.icon-plus
-							h4.caracteristica_title Cuales son nuestros objetivos
-						.caracteristica__oculto
-							p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-plus
+						span.caracteristica__title Cuales son nuestros objetivos
+						p.caracteristica__description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facilis tempore, ad. Vitae pariatur impedit inventore.
 
-		section#mision
 			.grupo
-				.caja
+				.caja.mision
 					h3.section-title Enfocados en crecer tu marca 
-					h5.section-title__subtitle Creamos increíbles páginas web para tu empresa
+					h5.mision__subtitle Creamos increíbles páginas web para tu empresa
 
-					.caracteristica
-						.caracteristica__vista
-							i.caracteristica__icon.icon-ok-circled
-							p.caracteristica__description Solamente una característica
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-ok-circled
+						span.caracteristica__description Solamente una característica
 
-					.caracteristica
-						.caracteristica__vista
-							i.caracteristica__icon.icon-ok-circled
-							p.caracteristica__description Solamente una característica
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-ok-circled
+						span.caracteristica__description Solamente una característica
 
-					.caracteristica
-						.caracteristica__vista
-							i.caracteristica__icon.icon-ok-circled
-							p.caracteristica__description Solamente una característica
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-ok-circled
+						span.caracteristica__description Solamente una característica
 
-					.caracteristica
-						.caracteristica__vista
-							i.caracteristica__icon.icon-ok-circled
-							p.caracteristica__description Solamente una característica
+					.caracteristica.apartado
+						i.caracteristica__icon.icon-ok-circled
+						span.caracteristica__description Solamente una característica
 
 
 				.caja
 					.caracteristica__img
-						img(src="")
+						img(src="img/pc-propio.png")
 
 		section#precios
 			.grupo

@@ -1,0 +1,43 @@
+#conocenos {
+	&>.grupo>* {
+		margin-top: 10rem;
+	}
+
+	.nosotros {
+		.caracteristica {
+			&__icon, &__title {
+				font-size: 1.8rem;
+			}
+
+			&__title {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.mision {
+		.section-title {
+			margin-bottom: 2rem;
+		}
+
+		&__subtitle {
+			text-align: center;
+			font-size: 2rem;
+			margin-bottom: 2rem;
+		}
+
+		.caracteristica {
+			margin: 1rem 8rem;
+			text-align: center;
+
+			&__icon {
+				font-size: 2rem;
+			}
+
+			&__description {
+				font-size: 1.8rem;
+				font-weight: bold;
+			}
+		}
+	}
+}

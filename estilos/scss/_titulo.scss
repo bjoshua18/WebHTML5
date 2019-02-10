@@ -48,7 +48,6 @@ $text-color: $azul3;
 	margin: 2rem auto;
 	font-size: 3rem;
 	font-family: 'Raleway', sans-serif;
-	// background: $background-color;
 
 	color: $text-color;
 	font-weight: 900;
@@ -60,8 +59,7 @@ $text-color: $azul3;
 	left: -.2rem;
 	width: 100%;
 	color: $text-color;
-	text-shadow: 2px 0 $background-color, -1px 0 yellow, -2px 0 red;
+	text-shadow: 2px 0 $background-color, -2px 0 yellow, -4px 0 red;
 	overflow: hidden;
 	animation: crt-me 2500ms infinite linear alternate-reverse;
-	// background: red;
 }

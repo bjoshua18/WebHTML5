@@ -5,7 +5,11 @@
 	@import "responsive";
 
 // Importamos los componentes de la web
+	@import "modulos/parallax";
+	@import "modulos";
 	@import "header";
 	@import "menu";
 	@import "galeria";
 	@import "titulo";
+	@import "servicios";
+	@import "conocenos";
