@@ -1,0 +1,66 @@
+#precios {
+	.section-title {
+		margin-bottom: 2rem;
+	}
+
+	.precio {
+		width: 90%;
+		margin: 5rem auto;
+		padding: 2rem;
+		border: 0.1rem solid $azul3;
+
+		&>* {
+			margin: 1rem 0;
+		}
+
+		&__title, &__cantidad {
+			font-size: 3rem;
+			text-align: center;
+		}
+
+		&__cantidad {
+			color: $azul3;
+			font-weight: bold;
+			padding-bottom: 1rem;
+			border-bottom: 0.1rem solid $azul3;
+
+			&:before {
+				content: "$";
+				font-size: 1.6rem;
+			}
+
+			&:after {
+				content: "/mes";
+				font-size: 1.6rem;
+			}
+		}
+
+		&__caracteristicas {
+			width: 60%;
+			margin: 2rem auto;
+
+			&>* {
+				padding: 1rem;
+			}
+
+			.caracteristica {
+				&__icon {
+					color: $verde;
+				}
+			}
+		}
+
+		&:hover {
+			// background: rgba($gris, 0.3);
+			box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15);
+		}
+	}
+
+	.precio {
+		@include desde(tablet) {
+			width: 32%;
+			display: inline-block;
+			margin: auto;
+		}
+	}
+}

@@ -1,5 +1,4 @@
 #servicios {
-	width: 100vw;
 	background: rgba(#000, 0.5);
 
 	.parallax::before {
@@ -12,6 +11,10 @@
 }
 
 .servicio {
+	&>* {
+		margin: 2rem 1rem;
+	}
+
 	text-align: center;
 
 	&__description {

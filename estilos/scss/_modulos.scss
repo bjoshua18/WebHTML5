@@ -8,6 +8,12 @@
     border-bottom: 0.1rem solid $azul3;
 }
 
+.section-subtitle {
+	text-align: center;
+	font-size: 2rem;
+	margin: 2rem 1rem;
+}
+
 /* Estilo de los apartados de las secciones */
 .apartado {
 	margin: 2rem 1rem;
@@ -16,10 +22,6 @@
 	color: $negro;
 	background: rgba($gris, 0.5);
 
-	&>* {
-		margin: 2rem 1rem;
-	}
-
 	& i {
 		color: $azul3;
 	}
@@ -27,8 +29,7 @@
 	&>h3, &>span {
 		color: $negro;
 	}
-
-	&:hover {
-		background: rgba($gris, 0.8);
-	}
 }
+
+/* Estilo de los botones */
+

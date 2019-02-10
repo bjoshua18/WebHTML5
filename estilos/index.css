@@ -220,7 +220,7 @@ body {
   overflow-y: scroll; }
 
 .parallax {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   position: relative;
   transform-style: inherit;
@@ -255,6 +255,11 @@ body {
   font-size: 3rem;
   border-bottom: 0.1rem solid #355bd5; }
 
+.section-subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 1rem; }
+
 /* Estilo de los apartados de las secciones */
 .apartado {
   margin: 2rem 1rem;
@@ -262,15 +267,12 @@ body {
   border-radius: 1rem;
   color: #071133;
   background: rgba(192, 192, 192, 0.5); }
-  .apartado > * {
-    margin: 2rem 1rem; }
   .apartado i {
     color: #355bd5; }
   .apartado > h3, .apartado > span {
     color: #071133; }
-  .apartado:hover {
-    background: rgba(192, 192, 192, 0.8); }
 
+/* Estilo de los botones */
 #header {
   width: 100vw;
   height: 100vh;
@@ -518,7 +520,6 @@ body {
   animation: crt-me 2500ms infinite linear alternate-reverse; }
 
 #servicios {
-  width: 100vw;
   background: rgba(0, 0, 0, 0.5); }
   #servicios .parallax::before {
     background-image: url(../img/gallery/bg7.jpg); }
@@ -527,6 +528,8 @@ body {
 
 .servicio {
   text-align: center; }
+  .servicio > * {
+    margin: 2rem 1rem; }
   .servicio__description {
     color: #fff; }
   .servicio__icon {
@@ -544,16 +547,51 @@ body {
 #conocenos .mision .section-title {
   margin-bottom: 2rem; }
 
-#conocenos .mision__subtitle {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem; }
-
 #conocenos .mision .caracteristica {
-  margin: 1rem 8rem;
-  text-align: center; }
+  margin: 1rem; }
   #conocenos .mision .caracteristica__icon {
     font-size: 2rem; }
   #conocenos .mision .caracteristica__description {
     font-size: 1.8rem;
     font-weight: bold; }
+
+#precios .section-title {
+  margin-bottom: 2rem; }
+
+#precios .precio {
+  width: 90%;
+  margin: 5rem auto;
+  padding: 2rem;
+  border: 0.1rem solid #355bd5; }
+  #precios .precio > * {
+    margin: 1rem 0; }
+  #precios .precio__title, #precios .precio__cantidad {
+    font-size: 3rem;
+    text-align: center; }
+  #precios .precio__cantidad {
+    color: #355bd5;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid #355bd5; }
+    #precios .precio__cantidad:before {
+      content: "$";
+      font-size: 1.6rem; }
+    #precios .precio__cantidad:after {
+      content: "/mes";
+      font-size: 1.6rem; }
+  #precios .precio__caracteristicas {
+    width: 60%;
+    margin: 2rem auto; }
+    #precios .precio__caracteristicas > * {
+      padding: 1rem; }
+    #precios .precio__caracteristicas .caracteristica__icon {
+      color: #35d7a4; }
+  #precios .precio:hover {
+    -webkit-box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15);
+    box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15); }
+
+@media screen and (min-width: 768px) {
+  #precios .precio {
+    width: 32%;
+    display: inline-block;
+    margin: auto; } }
