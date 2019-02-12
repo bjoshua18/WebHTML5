@@ -4,7 +4,10 @@
 	}
 
 	.precio {
+		position: relative;
 		width: 90%;
+		max-width: 40rem;
+		height: 50rem;
 		margin: 5rem auto;
 		padding: 2rem;
 		border: 0.1rem solid $azul3;
@@ -36,14 +39,18 @@
 		}
 
 		&__caracteristicas {
-			width: 60%;
+			position: absolute;
+			width: auto;
 			margin: 2rem auto;
+			left: 50%;
+			transform: translateX(-50%);
 
 			&>* {
 				padding: 1rem;
 			}
 
 			.caracteristica {
+				text-align: left;
 				&__icon {
 					color: $verde;
 				}
