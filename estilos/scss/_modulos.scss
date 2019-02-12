@@ -32,4 +32,42 @@
 }
 
 /* Estilo de los botones */
+.boton {
+	position: relative;
+	width: 15rem;
+	height: 5rem;
+	font-weight: 600;
+	background: none;
+	padding: 1rem;
+	border: .3rem solid $azul3;
+	outline: none;
+	cursor: pointer;
+	font-family: $font-defecto;
+	transition: 0.5s;
+	margin: 1rem;
+	overflow: hidden;
 
+	&:hover {
+		&::before {
+			animation: aaa 0.7s 1;
+			top: -40%;
+			left: -20%;
+		}
+	}
+
+	&::before {
+		content:"";
+		position: absolute;
+		width: 190%;
+		height: 300%;
+		background: $azul3;
+		transform: rotate(45deg);
+		top: 40%;
+		left: -130%;
+		z-index: -1;
+	}
+
+	&:active {
+		transform: scale(1.1);
+	}
+}

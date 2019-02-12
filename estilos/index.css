@@ -273,6 +273,44 @@ body {
     color: #071133; }
 
 /* Estilo de los botones */
+.boton {
+  position: relative;
+  width: 15rem;
+  height: 5rem;
+  font-weight: 600;
+  background: none;
+  padding: 1rem;
+  border: 0.3rem solid #355bd5;
+  outline: none;
+  cursor: pointer;
+  font-family: Roboto;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  margin: 1rem;
+  overflow: hidden; }
+  .boton:hover::before {
+    -webkit-animation: aaa 0.7s 1;
+    animation: aaa 0.7s 1;
+    top: -40%;
+    left: -20%; }
+  .boton::before {
+    content: "";
+    position: absolute;
+    width: 190%;
+    height: 300%;
+    background: #355bd5;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 40%;
+    left: -130%;
+    z-index: -1; }
+  .boton:active {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
 #header {
   width: 100vw;
   height: 100vh;
@@ -309,43 +347,8 @@ body {
   color: #fff; }
 
 .principal__botones__boton {
-  position: relative;
-  width: 15rem;
-  height: 5rem;
   color: #fff;
-  font-weight: 600;
-  background: none;
-  padding: 1rem;
-  border: 0.3rem solid #355bd5;
-  outline: none;
-  cursor: pointer;
-  font-family: Roboto;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  margin: 1rem;
-  overflow: hidden; }
-  .principal__botones__boton:hover::before {
-    -webkit-animation: aaa 0.7s 1;
-    animation: aaa 0.7s 1;
-    top: -40%;
-    left: -20%; }
-  .principal__botones__boton::before {
-    content: "";
-    position: absolute;
-    width: 190%;
-    height: 300%;
-    background: #355bd5;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 40%;
-    left: -130%;
-    z-index: -1; }
-  .principal__botones__boton:active {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
+  font-size: 1.5rem; }
 
 .titulo {
   display: none; }
@@ -589,6 +592,11 @@ body {
   #precios .precio:hover {
     -webkit-box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15);
     box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15); }
+  #precios .precio__boton {
+    color: #355bd5;
+    font-size: 2rem; }
+    #precios .precio__boton:hover {
+      color: #fff; }
 
 @media screen and (min-width: 768px) {
   #precios .precio {
