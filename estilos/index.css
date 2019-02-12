@@ -613,3 +613,33 @@ body {
     width: 32%;
     display: inline-block;
     margin: auto; } }
+
+#footer {
+  background: #355bd5;
+  margin-top: 1rem;
+  padding: 2rem; }
+  #footer > * {
+    text-align: center; }
+  #footer .creditos span {
+    color: #fff; }
+  #footer .sociales {
+    padding: 1rem; }
+    #footer .sociales__icon {
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s;
+      color: #fff;
+      font-size: 4rem;
+      margin: .5rem; }
+      #footer .sociales__icon:hover {
+        color: #c0c0c0;
+        /* No se aplica */
+        /*transform: scale(1.25);*/ }
+  @media screen and (min-width: 768px) {
+    #footer .creditos, #footer .sociales {
+      display: inline-block;
+      width: 40%; }
+    #footer .creditos {
+      text-align: left; }
+    #footer .sociales {
+      text-align: right; } }

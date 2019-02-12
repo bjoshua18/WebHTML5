@@ -204,18 +204,34 @@
       <div class="grupo">
         <div class="caja">
           <h3 class="section-title">Envíanos tus sugerencias</h3>
-          <div class="formulario">Aquí va el formulario</div>
+          <form id="formulario" action="#" method="post">
+            <div class="labels-cols">
+              <label for="nombre">Nombre: </label>
+              <label for="email">Email: </label>
+              <label for="fuente">Cómo nos conociste?</label>
+              <label for="newsletter">¿Newsletter?</label>
+              <label for="sugerencias">¿Sugerencias? Escríbenos</label>
+            </div>
+            <div class="inputs-cols">
+              <input id="nombre" type="text" name="nombre" placeholder="Nombre Completo" autofocus required>
+              <input id="email" type="email" name="email" placeholder="correo@domain.com" required>
+              <select name="fuente" id="fuente">
+                <option value="matriculados">Por alumno del centro</option>
+                <option value="familiar">Familiares</option>
+                <option value="internet">Buscadores (Google, Bing, etc)</option>
+                <option value="redes">Redes Sociales</option>
+              </select>
+              <input id="newsletter" type="checkbox" name="newsletter">Sí, quiero recibir noticias.
+              <textarea id="sugerencias" name="sugerencias" cols="30" rows="5"></textarea>
+            </div>
+          </form>
         </div>
       </div>
     </section>
     <footer id="footer">
       <div class="grupo">
-        <div class="caja">
-          <p class="creditos">ProyectView &copy; 2019 | Privacy Policy</p>
-        </div>
-        <div class="caja">
-          <div class="sociales"><a class="sociales__item icon-facebook-circled" href="#"></a><a class="sociales__item icon-twitter-circled" href="#"></a><a class="sociales__item icon-linkedin-circled" href="#"></a></div>
-        </div>
+        <div class="caja creditos"><span>ProyectView &copy; 2019 | Privacy Policy</span></div>
+        <div class="caja sociales"><a class="sociales__link" href="#"><i class="sociales__icon icon-facebook-circled"></i></a><a class="sociales__link" href="#"><i class="sociales__icon icon-twitter-circled"></i></a><a class="sociales__link" href="#"><i class="sociales__icon icon-linkedin-circled"></i></a></div>
       </div>
     </footer>
   </body>

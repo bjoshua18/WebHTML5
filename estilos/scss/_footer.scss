@@ -1,0 +1,46 @@
+#footer {
+	background: $azul3;
+	margin-top: 1rem;
+	padding: 2rem;
+
+	&>* {
+		text-align: center;
+	}
+
+	.creditos span {
+		color:$blanco;
+	}
+
+	.sociales {
+		padding: 1rem;
+
+		&__icon {
+			transition: 0.5s;
+			color: $blanco;
+			font-size: 4rem;
+			margin: .5rem;
+
+			&:hover {
+				color: $gris;
+				/* No se aplica */
+				/*transform: scale(1.25);*/
+			}
+		}
+	}
+
+	@include desde(tablet) {
+		.creditos, .sociales {
+			display: inline-block;
+			width: 40%;
+		}
+
+		.creditos {
+			text-align: left;
+		}
+
+		.sociales {
+			text-align: right;
+		}
+
+	}
+}
