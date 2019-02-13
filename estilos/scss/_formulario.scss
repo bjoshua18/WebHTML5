@@ -1,0 +1,27 @@
+#formulario {
+	width: 90%;
+	margin: 0 auto;
+	#form {
+		padding: 2rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		background: rgba($gris,.5);
+
+		.columna {
+			text-align: center;
+
+			&>* {
+				display: block;
+				margin-bottom: 1rem;
+			}
+		}
+
+		.btn-form {
+			color: $azul3;
+
+			&:hover {
+				color: $blanco;
+			}
+		}
+	}
+}

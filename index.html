@@ -204,15 +204,15 @@
       <div class="grupo">
         <div class="caja">
           <h3 class="section-title">Envíanos tus sugerencias</h3>
-          <form id="formulario" action="#" method="post">
-            <div class="labels-cols">
+          <form id="form" action="#" method="post">
+            <div class="columna">
               <label for="nombre">Nombre: </label>
               <label for="email">Email: </label>
               <label for="fuente">Cómo nos conociste?</label>
               <label for="newsletter">¿Newsletter?</label>
               <label for="sugerencias">¿Sugerencias? Escríbenos</label>
             </div>
-            <div class="inputs-cols">
+            <div class="columna">
               <input id="nombre" type="text" name="nombre" placeholder="Nombre Completo" autofocus required>
               <input id="email" type="email" name="email" placeholder="correo@domain.com" required>
               <select name="fuente" id="fuente">
@@ -221,8 +221,11 @@
                 <option value="internet">Buscadores (Google, Bing, etc)</option>
                 <option value="redes">Redes Sociales</option>
               </select>
-              <input id="newsletter" type="checkbox" name="newsletter">Sí, quiero recibir noticias.
-              <textarea id="sugerencias" name="sugerencias" cols="30" rows="5"></textarea>
+              <div class="noticia-cont">
+                <input id="newsletter" type="checkbox" name="newsletter">Sí, quiero recibir noticias.
+              </div>
+              <textarea id="sugerencias" name="sugerencias" cols="30" rows="5"></textarea><!-- Añado un "button" porque la animación con el "before" no es posible con un "input" -->
+              <button class="btn-form boton">Enviar!</button>
             </div>
           </form>
         </div>

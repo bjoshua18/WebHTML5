@@ -289,11 +289,6 @@ body {
   transition: 0.5s;
   margin: 1rem;
   overflow: hidden; }
-  .boton:hover::before {
-    -webkit-animation: aaa 0.7s 1;
-    animation: aaa 0.7s 1;
-    top: -40%;
-    left: -20%; }
   .boton::before {
     content: "";
     position: absolute;
@@ -306,6 +301,11 @@ body {
     top: 40%;
     left: -130%;
     z-index: -1; }
+  .boton:hover::before {
+    -webkit-animation: aaa 0.7s 1;
+    animation: aaa 0.7s 1;
+    top: -40%;
+    left: -20%; }
   .boton:active {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -613,6 +613,26 @@ body {
     width: 32%;
     display: inline-block;
     margin: auto; } }
+
+#formulario {
+  width: 90%;
+  margin: 0 auto; }
+  #formulario #form {
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    background: rgba(192, 192, 192, 0.5); }
+    #formulario #form .columna {
+      text-align: center; }
+      #formulario #form .columna > * {
+        display: block;
+        margin-bottom: 1rem; }
+    #formulario #form .btn-form {
+      color: #355bd5; }
+      #formulario #form .btn-form:hover {
+        color: #fff; }
 
 #footer {
   background: #355bd5;

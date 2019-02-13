@@ -279,15 +279,15 @@ html(lang="es")
 			.grupo
 				.caja
 					h3.section-title Envíanos tus sugerencias
-					form#formulario(action="#", method="post")
-						.labels-cols
+					form#form(action="#", method="post")
+						.columna
 							label(for="nombre") Nombre: 
 							label(for="email") Email: 
 							label(for="fuente") Cómo nos conociste?
 							label(for="newsletter") ¿Newsletter?
 							label(for="sugerencias") ¿Sugerencias? Escríbenos
 
-						.inputs-cols
+						.columna
 							input#nombre(type="text", name="nombre", placeholder="Nombre Completo", autofocus, required)
 							input#email(type="email", name="email", placeholder="correo@domain.com", required)
 							select(name="fuente" id="fuente")
@@ -295,9 +295,12 @@ html(lang="es")
 								option(value="familiar") Familiares
 								option(value="internet") Buscadores (Google, Bing, etc)
 								option(value="redes") Redes Sociales
-							input#newsletter(type="checkbox", name="newsletter")
-							| Sí, quiero recibir noticias.
+							.noticia-cont
+								input#newsletter(type="checkbox", name="newsletter")
+								|Sí, quiero recibir noticias.
 							textarea#sugerencias(name="sugerencias", cols="30", rows="5")
+							<!-- Añado un "button" porque la animación con el "before" no es posible con un "input" -->
+							button.btn-form.boton Enviar!
 
 
 

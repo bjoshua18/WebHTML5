@@ -47,14 +47,6 @@
 	margin: 1rem;
 	overflow: hidden;
 
-	&:hover {
-		&::before {
-			animation: aaa 0.7s 1;
-			top: -40%;
-			left: -20%;
-		}
-	}
-
 	&::before {
 		content:"";
 		position: absolute;
@@ -65,6 +57,14 @@
 		top: 40%;
 		left: -130%;
 		z-index: -1;
+	}
+
+	&:hover {
+		&::before {
+			animation: aaa 0.7s 1;
+			top: -40%;
+			left: -20%;
+		}
 	}
 
 	&:active {
