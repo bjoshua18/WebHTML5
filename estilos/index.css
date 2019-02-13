@@ -218,7 +218,8 @@ img {
   .row .col-1-of-5 {
     width: calc((100% - 4*4rem)/5); }
   .row {
-    clear: both; } }
+    clear: both;
+    overflow: hidden; } }
 
 /* Estilo del parallax */
 html {
@@ -362,8 +363,7 @@ body {
       object-fit: cover; }
   #header .principal__subtitulo {
     font-family: Work_Sans;
-    text-transform: uppercase;
-    color: #fff; }
+    text-transform: uppercase; }
   #header .principal__botones__boton {
     color: #fff;
     font-size: 1.5rem; }
@@ -582,7 +582,7 @@ body {
       padding-bottom: 5%; } }
 
 #conocenos > .grupo {
-  margin-top: 10rem; }
+  margin: 10rem 1rem; }
 
 #conocenos .nosotros .caracteristica__icon, #conocenos .nosotros .caracteristica__title {
   font-size: 1.8rem; }
@@ -616,61 +616,78 @@ body {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%); } }
 
-#precios .section-title {
-  margin-bottom: 2rem; }
-
-#precios .precio {
+#precios {
+  color: #fff;
+  background: rgba(7, 17, 51, 0.3);
   position: relative;
-  width: 90%;
-  max-width: 40rem;
-  height: 50rem;
-  margin: 5rem auto;
-  padding: 2rem;
-  border: 0.1rem solid #355bd5; }
-  #precios .precio > * {
-    margin: 1rem 0; }
-  #precios .precio__title, #precios .precio__cantidad {
-    font-size: 3rem;
-    text-align: center; }
-  #precios .precio__cantidad {
-    color: #355bd5;
-    font-weight: bold;
-    padding-bottom: 1rem;
-    border-bottom: 0.1rem solid #355bd5; }
-    #precios .precio__cantidad:before {
-      content: "$";
-      font-size: 1.6rem; }
-    #precios .precio__cantidad:after {
-      content: "/mes";
-      font-size: 1.6rem; }
-  #precios .precio__caracteristicas {
+  overflow: hidden; }
+  #precios .video {
     position: absolute;
-    width: auto;
-    margin: 2rem auto;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%); }
-    #precios .precio__caracteristicas > * {
-      padding: 1rem; }
-    #precios .precio__caracteristicas .caracteristica {
-      text-align: left; }
-      #precios .precio__caracteristicas .caracteristica__icon {
-        color: #35d7a4; }
-  #precios .precio:hover {
-    -webkit-box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15);
-    box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15); }
-  #precios .precio__boton {
-    color: #355bd5;
-    font-size: 2rem; }
-    #precios .precio__boton:hover {
-      color: #fff; }
-
-@media screen and (min-width: 768px) {
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+    #precios .video video {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  #precios .section-title {
+    margin-top: 5rem;
+    margin-bottom: 2rem; }
   #precios .precio {
-    width: 32%;
-    display: inline-block;
-    margin: auto; } }
+    position: relative;
+    background: rgba(192, 192, 192, 0.8);
+    width: 90%;
+    max-width: 40rem;
+    height: 50rem;
+    margin: 5rem auto;
+    padding: 2rem;
+    border: 0.1rem solid #355bd5;
+    color: #355bd5; }
+    #precios .precio > * {
+      margin: 1rem 0; }
+    #precios .precio__title, #precios .precio__cantidad {
+      font-size: 3rem;
+      text-align: center; }
+    #precios .precio__cantidad {
+      font-weight: bold;
+      padding-bottom: 1rem;
+      border-bottom: 0.1rem solid #355bd5; }
+      #precios .precio__cantidad:before {
+        content: "$";
+        font-size: 1.6rem; }
+      #precios .precio__cantidad:after {
+        content: "/mes";
+        font-size: 1.6rem; }
+    #precios .precio__caracteristicas {
+      position: absolute;
+      color: #fff;
+      width: auto;
+      margin: 2rem auto;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      #precios .precio__caracteristicas > * {
+        padding: 1rem; }
+      #precios .precio__caracteristicas .caracteristica {
+        text-align: left; }
+        #precios .precio__caracteristicas .caracteristica__icon {
+          color: #35d7a4; }
+    #precios .precio:hover {
+      -webkit-box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15);
+      box-shadow: 0px 21px 51.3px 5.7px rgba(23, 31, 44, 0.15); }
+    #precios .precio__boton {
+      color: #355bd5;
+      font-size: 2rem; }
+      #precios .precio__boton:hover {
+        color: #fff; }
+  @media screen and (min-width: 768px) {
+    #precios .grupo-precio {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr); } }
 
 #formulario {
   width: 90%;
