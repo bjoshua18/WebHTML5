@@ -318,37 +318,39 @@ body {
   overflow: hidden; }
   #header .parallax::before {
     background-image: url(../img/bg2.jpg); }
-
-.principal > * {
-  margin-top: 2rem; }
-
-.principal__grupo {
-  width: 100vw;
-  height: 80vh; }
-
-.principal__caja {
-  position: relative;
-  /* Para posicionar el div en el centro */
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center; }
-
-.principal__logo {
-  margin: 0 auto; }
-  .principal__logo__img {
-    -o-object-fit: cover;
-    object-fit: cover; }
-
-.principal__subtitulo {
-  font-family: Work_Sans;
-  text-transform: uppercase;
-  color: #fff; }
-
-.principal__botones__boton {
-  color: #fff;
-  font-size: 1.5rem; }
+  #header .principal > * {
+    margin-top: 2rem; }
+  #header .principal__grupo {
+    width: 100vw;
+    height: 80vh; }
+  #header .principal__caja {
+    position: relative;
+    /* Para posicionar el div en el centro */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center; }
+  #header .principal__logo {
+    width: 40%;
+    margin: 0 auto; }
+    #header .principal__logo__img {
+      -o-object-fit: cover;
+      object-fit: cover; }
+  #header .principal__subtitulo {
+    font-family: Work_Sans;
+    text-transform: uppercase;
+    color: #fff; }
+  #header .principal__botones__boton {
+    color: #fff;
+    font-size: 1.5rem; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #header .principal__logo {
+      width: 30%; } }
+  @media screen and (min-width: 1025px) {
+    #header .principal__logo {
+      width: 20%;
+      max-width: 30rem; } }
 
 .titulo {
   display: none; }
@@ -408,7 +410,12 @@ body {
 
 @media screen and (min-width: 1025px) {
   .titulo {
-    display: initial; }
+    display: initial;
+    text-align: center;
+    padding: 3rem 0 1rem 5%;
+    font-size: 3rem;
+    color: #fff;
+    border-bottom: 0.2rem solid #355bd5; }
   .logo-menu {
     display: -ms-grid;
     display: grid;

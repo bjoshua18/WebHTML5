@@ -7,46 +7,60 @@
 	.parallax::before {
 		background-image: url(../img/bg2.jpg);
 	}
-}
 
-.principal {
-	&>* {
-		margin-top: 2rem;
-	}
-
-	&__grupo {
-		width: 100vw;
-		height: 80vh;
-	}
-
-	&__caja {
-		position: relative;
-		/* Para posicionar el div en el centro */
-		top: 50%;
-		transform: translateY(-50%);
-		text-align: center;
-
-
-	}
-
-	&__logo {
-		margin: 0 auto;
-		&__img {
-			object-fit: cover;
+	.principal {
+		&>* {
+			margin-top: 2rem;
 		}
-	}
 
-	&__subtitulo {
-		font-family: $font-titulo;
-		text-transform: uppercase;
-		color: $blanco;
-	}
+		&__grupo {
+			width: 100vw;
+			height: 80vh;
+		}
 
-	&__botones {
+		&__caja {
+			position: relative;
+			/* Para posicionar el div en el centro */
+			top: 50%;
+			transform: translateY(-50%);
+			text-align: center;
 
-		&__boton {
+
+		}
+
+		&__logo {
+			width: 40%;
+			margin: 0 auto;
+			&__img {
+				object-fit: cover;
+			}
+		}
+
+		&__subtitulo {
+			font-family: $font-titulo;
+			text-transform: uppercase;
 			color: $blanco;
-			font-size: 1.5rem;
+		}
+
+		&__botones {
+
+			&__boton {
+				color: $blanco;
+				font-size: 1.5rem;
+			}
+		}
+
+		@include desde-hasta(tablet,pc) {
+			&__logo {
+				width: 30%;
+			}
+		}
+
+		@include desde(pc) {
+			&__logo {
+				width: 20%;
+				max-width: 30rem;
+			}
 		}
 	}
 }
