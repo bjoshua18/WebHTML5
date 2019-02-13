@@ -34,4 +34,11 @@
 			}
 		}
 	}
+
+	@include desde-hasta(tablet, pc) {
+		.grupo {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
 }

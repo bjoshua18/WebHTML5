@@ -197,6 +197,29 @@ img {
   .pc-100 {
     width: 100%; } }
 
+@media screen and (min-width: 1025px) {
+  [class^="col-"] {
+    float: left;
+    display: inline-block; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 4rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 4rem)/2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2*4rem)/3); }
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * 4rem)/3) + 4rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3*4rem)/4); }
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * 4rem)/4) + 4rem); }
+  .row .col-3-of-4 {
+    width: calc(3 * ((100% - 3*4rem)/4) + 8rem); }
+  .row .col-1-of-5 {
+    width: calc((100% - 4*4rem)/5); }
+  .row {
+    clear: both; } }
+
 /* Estilo del parallax */
 html {
   /*Necesario para el PARALLAX*/
@@ -244,7 +267,7 @@ body {
   -webkit-transform: translateZ(-1px) scale(2);
   z-index: -1;
   width: 100vw;
-  height: 100%; }
+  height: 100vh; }
 
 /* Estilo de los títulos de las secciones */
 .section-title {
@@ -532,18 +555,31 @@ body {
 #servicios {
   background: rgba(0, 0, 0, 0.5); }
   #servicios .parallax::before {
-    background-image: url(../img/gallery/bg7.jpg); }
+    background-image: url(../img/gallery/bg8.jpg); }
   #servicios .section-title {
     color: white; }
-
-.servicio {
-  text-align: center; }
-  .servicio > * {
-    margin: 2rem 1rem; }
-  .servicio__description {
-    color: #fff; }
-  .servicio__icon {
-    font-size: 3.5rem; }
+  #servicios .servicio {
+    text-align: center; }
+    #servicios .servicio > * {
+      margin: 2rem 1rem; }
+    #servicios .servicio__description {
+      color: #fff; }
+    #servicios .servicio__icon {
+      font-size: 3.5rem; }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #servicios .grupo {
+      padding-top: 10%;
+      padding-bottom: 10%; }
+    #servicios .row {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: (2fr)[2];
+      grid-template-columns: repeat(2, 2fr);
+      grid-template-rows: repeat(auto-fill); } }
+  @media screen and (min-width: 768px) {
+    #servicios .grupo {
+      padding-top: 5%;
+      padding-bottom: 5%; } }
 
 #conocenos > .grupo > * {
   margin-top: 10rem; }
@@ -564,6 +600,13 @@ body {
   #conocenos .mision .caracteristica__description {
     font-size: 1.8rem;
     font-weight: bold; }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #conocenos .grupo {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr); } }
 
 #precios .section-title {
   margin-bottom: 2rem; }

@@ -2,26 +2,48 @@
 	background: rgba(#000, 0.5);
 
 	.parallax::before {
-		background-image: url(../img/gallery/bg7.jpg);
+		background-image: url(../img/gallery/bg8.jpg);
 	}
 
 	.section-title {
 		color: white;
 	}
-}
 
-.servicio {
-	&>* {
-		margin: 2rem 1rem;
+	.servicio {
+		&>* {
+			margin: 2rem 1rem;
+		}
+
+		text-align: center;
+
+		&__description {
+			color: $blanco;
+		}
+
+		&__icon {
+			font-size: 3.5rem;
+		}
 	}
 
-	text-align: center;
+	
 
-	&__description {
-		color: $blanco;
+	@include desde-hasta(tablet, pc) {
+		.grupo {
+			padding-top: 10%;
+			padding-bottom: 10%;
+		}
+
+		.row {
+			display: grid;
+			grid-template-columns: repeat(2, 2fr);
+			grid-template-rows: repeat(auto-fill);
+		}
 	}
 
-	&__icon {
-		font-size: 3.5rem;
+	@include desde(tablet) {
+		.grupo {
+			padding-top: 5%;
+			padding-bottom: 5%;
+		}
 	}
 }
