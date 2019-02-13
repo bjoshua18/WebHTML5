@@ -581,7 +581,7 @@ body {
       padding-top: 5%;
       padding-bottom: 5%; } }
 
-#conocenos > .grupo > * {
+#conocenos > .grupo {
   margin-top: 10rem; }
 
 #conocenos .nosotros .caracteristica__icon, #conocenos .nosotros .caracteristica__title {
@@ -606,7 +606,15 @@ body {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  #conocenos .caja1 {
+    position: relative; }
+    #conocenos .caja1 .caracteristica__img {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); } }
 
 #precios .section-title {
   margin-bottom: 2rem; }

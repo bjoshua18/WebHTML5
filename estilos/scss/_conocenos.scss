@@ -1,5 +1,5 @@
 #conocenos {
-	&>.grupo>* {
+	&>.grupo {
 		margin-top: 10rem;
 	}
 
@@ -39,6 +39,15 @@
 		.grupo {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.caja1 {
+			position: relative;
+			.caracteristica__img {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+			}
 		}
 	}
 }
