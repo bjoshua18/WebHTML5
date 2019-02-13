@@ -11,17 +11,27 @@
 			text-align: center;
 
 			&>* {
+				width: 80%;
 				display: block;
 				margin-bottom: 1rem;
+			}
+
+			.noticia-cont {
+				text-align: left;
 			}
 		}
 
 		.btn-form {
 			color: $azul3;
+			width: 15rem;
 
 			&:hover {
 				color: $blanco;
 			}
+		}
+
+		@include desde(tablet) {
+			grid-template-columns: 1fr 2fr;			
 		}
 	}
 }

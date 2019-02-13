@@ -702,12 +702,20 @@ body {
     #formulario #form .columna {
       text-align: center; }
       #formulario #form .columna > * {
+        width: 80%;
         display: block;
         margin-bottom: 1rem; }
+      #formulario #form .columna .noticia-cont {
+        text-align: left; }
     #formulario #form .btn-form {
-      color: #355bd5; }
+      color: #355bd5;
+      width: 15rem; }
       #formulario #form .btn-form:hover {
         color: #fff; }
+    @media screen and (min-width: 768px) {
+      #formulario #form {
+        -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr; } }
 
 #footer {
   background: #355bd5;
