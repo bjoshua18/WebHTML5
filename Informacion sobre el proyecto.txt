@@ -1,0 +1,4 @@
+El proyecto lo hice con dos lenguajes preprocesadores, pug para html y sass para css.
+Envío los archivos de los preprocesadores para más claridad.
+
+También envío el proyecto con su repositorio git por si quiere ver las distintas fases del proyecto.
