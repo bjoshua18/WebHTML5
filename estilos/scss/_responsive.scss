@@ -1,9 +1,0 @@
-@each $size, $screen-size  in $sizes {
-	@media all and (min-width: #{$screen-size}) {
-		@for $i from 1 through 20 {
-			.#{$size}-#{$i*5} {
-				width: $i*5%;
-			}
-		}
-	}
-}

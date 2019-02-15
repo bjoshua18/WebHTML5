@@ -27,13 +27,13 @@ html(lang="es")
 								li.menu__item
 									a.menu__link(href="#") Inicio
 								li.menu__item
-									a.menu__link(href="#") Servicios
+									a.menu__link(href="#servicios") Servicios
 								li.menu__item
-									a.menu__link(href="#") Nosotros
+									a.menu__link(href="#conocenos") Nosotros
 								li.menu__item
-									a.menu__link(href="#") Precios
+									a.menu__link(href="#precios") Precios
 								li.menu__item
-									a.menu__link(href="#") Contacto
+									a.menu__link(href="#formulario") Contacto
 
 				.grupo.principal__grupo
 					.caja.principal__caja
@@ -294,7 +294,7 @@ html(lang="es")
 							label(for="sugerencias") ¿Sugerencias? Escríbenos
 
 						.columna
-							input#nombre(type="text", name="nombre", placeholder="Nombre Completo", autofocus, required)
+							input#nombre(type="text", name="nombre", placeholder="Nombre Completo", required)
 							input#email(type="email", name="email", placeholder="correo@domain.com", required)
 							select(name="fuente" id="fuente")
 								option(value="matriculados") Por alumno del centro
@@ -306,7 +306,7 @@ html(lang="es")
 								|Sí, quiero recibir noticias.
 							textarea#sugerencias(name="sugerencias", cols="30", rows="5")
 							<!-- Añado un "button" porque la animación con el "before" no es posible con un "input" -->
-							button.btn-form.boton Enviar!
+							button.btn-form.boton(type="submit") Enviar!
 
 
 

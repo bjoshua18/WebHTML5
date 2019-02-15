@@ -23,10 +23,10 @@
             <nav class="menu">
               <ul class="menu__contenedor">
                 <li class="menu__item"><a class="menu__link" href="#">Inicio</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Servicios</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Nosotros</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Precios</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">Contacto</a></li>
+                <li class="menu__item"><a class="menu__link" href="#servicios">Servicios</a></li>
+                <li class="menu__item"><a class="menu__link" href="#conocenos">Nosotros</a></li>
+                <li class="menu__item"><a class="menu__link" href="#precios">Precios</a></li>
+                <li class="menu__item"><a class="menu__link" href="#formulario">Contacto</a></li>
               </ul>
             </nav>
           </div>
@@ -224,7 +224,7 @@
               <label for="sugerencias">¿Sugerencias? Escríbenos</label>
             </div>
             <div class="columna">
-              <input id="nombre" type="text" name="nombre" placeholder="Nombre Completo" autofocus required>
+              <input id="nombre" type="text" name="nombre" placeholder="Nombre Completo" required>
               <input id="email" type="email" name="email" placeholder="correo@domain.com" required>
               <select name="fuente" id="fuente">
                 <option value="matriculados">Por alumno del centro</option>
@@ -236,7 +236,7 @@
                 <input id="newsletter" type="checkbox" name="newsletter">Sí, quiero recibir noticias.
               </div>
               <textarea id="sugerencias" name="sugerencias" cols="30" rows="5"></textarea><!-- Añado un "button" porque la animación con el "before" no es posible con un "input" -->
-              <button class="btn-form boton">Enviar!</button>
+              <button class="btn-form boton" type="submit">Enviar!</button>
             </div>
           </form>
         </div>
