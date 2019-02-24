@@ -286,29 +286,45 @@ html(lang="es")
 				.caja
 					h3.section-title Envíanos tus sugerencias
 					form#form(action="#", method="post")
-						.columna
-							label(for="nombre") Nombre: 
-							label(for="email") Email: 
-							label(for="fuente") Cómo nos conociste?
-							label(for="newsletter") ¿Newsletter?
-							label(for="sugerencias") ¿Sugerencias? Escríbenos
+						.fila
+							.columna
+								label(for="nombre") Nombre:
+							.columna
+								input#nombre(type="text", name="nombre", placeholder="Nombre Completo", required)
 
-						.columna
-							input#nombre(type="text", name="nombre", placeholder="Nombre Completo", required)
-							input#email(type="email", name="email", placeholder="correo@domain.com", required)
-							select(name="fuente" id="fuente")
-								option(value="matriculados") Por alumno del centro
-								option(value="familiar") Familiares
-								option(value="internet") Buscadores (Google, Bing, etc)
-								option(value="redes") Redes Sociales
-							.noticia-cont
-								input#newsletter(type="checkbox", name="newsletter")
-								|Sí, quiero recibir noticias.
-							textarea#sugerencias(name="sugerencias", cols="30", rows="5")
+						.fila
+							.columna
+								label(for="email") Email:
+							.columna
+								input#email(type="email", name="email", placeholder="correo@domain.com", required)
+
+						.fila
+							.columna
+								label(for="fuente") Cómo nos conociste?
+							.columna
+								select(name="fuente" id="fuente")
+									option(value="matriculados") Por alumno del centro
+									option(value="familiar") Familiares
+									option(value="internet") Buscadores (Google, Bing, etc)
+									option(value="redes") Redes Sociales
+
+						.fila
+							.columna
+								label(for="newsletter") ¿Newsletter?
+							.columna
+								.noticia-cont
+									input#newsletter(type="checkbox", name="newsletter")
+									|Sí, quiero recibir noticias.
+
+						.fila
+							.columna
+								label(for="sugerencias") ¿Sugerencias? Escríbenos
+							.columna
+								textarea#sugerencias(name="sugerencias", cols="30", rows="5")
+
+						.fila
 							<!-- Añado un "button" porque la animación con el "before" no es posible con un "input" -->
 							button.btn-form.boton(type="submit") Enviar!
-
-
 
 		footer#footer
 			.grupo

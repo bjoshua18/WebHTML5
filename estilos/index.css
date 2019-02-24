@@ -142,8 +142,8 @@ body {
   -webkit-transform: translateZ(-1px) scale(2);
   z-index: -1;
   width: 100vw;
-  height: 135vh; }
-  @media screen and (min-width: 768px) {
+  height: 135%; }
+  @media screen and (min-width: 1025px) {
     .parallax::before {
       height: 100vh; } }
 
@@ -439,7 +439,8 @@ body {
   animation: crt-me 2500ms infinite linear alternate-reverse; }
 
 #servicios {
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.5);
+  overflow: hidden; }
   #servicios .parallax::before {
     background-image: url(../img/gallery/bg8.jpg); }
   #servicios .section-title {
@@ -593,15 +594,15 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
     background: rgba(192, 192, 192, 0.5); }
-    #formulario #form .columna {
-      text-align: center; }
-      #formulario #form .columna > * {
-        width: 80%;
-        display: block;
-        margin-bottom: 1rem; }
-      #formulario #form .columna .noticia-cont {
-        text-align: left; }
+    #formulario #form .fila .columna > * {
+      width: 100%;
+      display: block;
+      margin-bottom: 1rem; }
+    #formulario #form .fila .columna .noticia-cont {
+      text-align: left; }
     #formulario #form .btn-form {
       color: #355bd5;
       width: 15rem; }
@@ -609,8 +610,20 @@ body {
         color: #fff; }
     @media screen and (min-width: 768px) {
       #formulario #form {
-        -ms-grid-columns: 1fr 2fr;
-        grid-template-columns: 1fr 2fr; } }
+        display: block; }
+        #formulario #form .fila {
+          margin: 2rem auto;
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr; } }
+    @media screen and (min-width: 1025px) {
+      #formulario #form {
+        width: 70%;
+        margin: 0 auto; }
+        #formulario #form .fila {
+          -ms-grid-columns: 1fr 2fr;
+          grid-template-columns: 1fr 2fr; } }
 
 #footer {
   background: #355bd5;
