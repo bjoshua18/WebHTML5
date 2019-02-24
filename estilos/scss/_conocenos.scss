@@ -12,6 +12,10 @@
 			&__title {
 				font-weight: bold;
 			}
+
+			&__description {
+				font-size: 1.6rem;
+			}
 		}
 	}
 
@@ -32,6 +36,13 @@
 				font-size: 1.8rem;
 				font-weight: bold;
 			}
+		}
+	}
+
+	.caja1 {
+		.caracteristica__img {
+			max-width: 50rem;
+			margin: auto;
 		}
 	}
 

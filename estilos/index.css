@@ -62,7 +62,7 @@ html {
   font-size: 10px; }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-family: Roboto; }
 
 img {
@@ -142,7 +142,10 @@ body {
   -webkit-transform: translateZ(-1px) scale(2);
   z-index: -1;
   width: 100vw;
-  height: 100vh; }
+  height: 135vh; }
+  @media screen and (min-width: 768px) {
+    .parallax::before {
+      height: 100vh; } }
 
 /* Estilo de los títulos de las secciones */
 .section-title {
@@ -357,6 +360,15 @@ body {
       grid-template-rows: repeat(auto-fill, 20rem);
       grid-gap: 1rem; } }
 
+.galeria__img {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .galeria__img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
 /* Keyframes de la animación */
 @-webkit-keyframes crt-me {
   0% {
@@ -431,8 +443,9 @@ body {
   #servicios .parallax::before {
     background-image: url(../img/gallery/bg8.jpg); }
   #servicios .section-title {
-    color: white; }
+    color: #fff; }
   #servicios .servicio {
+    font-size: 1.6rem;
     text-align: center; }
     #servicios .servicio > * {
       margin: 2rem 1rem; }
@@ -464,6 +477,9 @@ body {
 #conocenos .nosotros .caracteristica__title {
   font-weight: bold; }
 
+#conocenos .nosotros .caracteristica__description {
+  font-size: 1.6rem; }
+
 #conocenos .mision .section-title {
   margin-bottom: 2rem; }
 
@@ -474,6 +490,10 @@ body {
   #conocenos .mision .caracteristica__description {
     font-size: 1.8rem;
     font-weight: bold; }
+
+#conocenos .caja1 .caracteristica__img {
+  max-width: 50rem;
+  margin: auto; }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #conocenos .grupo {
@@ -534,6 +554,7 @@ body {
         content: "/mes";
         font-size: 1.6rem; }
     #precios .precio__caracteristicas {
+      font-size: 1.6rem;
       position: absolute;
       color: #fff;
       width: auto;
@@ -620,3 +641,20 @@ body {
       text-align: left; }
     #footer .sociales {
       text-align: right; } }
+
+/* Cambios del font-size */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    font-size: 1.4rem; }
+  h2 {
+    font-size: 3rem; }
+  h3 {
+    font-size: 1.8rem; } }
+
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 1.6rem; }
+  h2 {
+    font-size: 4rem; }
+  h3 {
+    font-size: 2rem; } }

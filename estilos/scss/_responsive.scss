@@ -1,0 +1,11 @@
+/* Cambios del font-size */
+@include desde-hasta(tablet, pc) {
+    body {font-size: 1.4rem;}
+    h2 {font-size: 3rem;}
+    h3 {font-size: 1.8rem;}
+}
+@include desde(pc) {
+    body {font-size: 1.6rem;}
+    h2 {font-size: 4rem;}
+    h3 {font-size: 2rem;}
+}

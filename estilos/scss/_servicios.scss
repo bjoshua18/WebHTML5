@@ -6,10 +6,12 @@
 	}
 
 	.section-title {
-		color: white;
+		color: $blanco;
 	}
 
 	.servicio {
+		font-size: 1.6rem;
+
 		&>* {
 			margin: 2rem 1rem;
 		}

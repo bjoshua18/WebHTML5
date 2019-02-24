@@ -27,4 +27,11 @@
 			}
 		}
 	}
+
+	&__img {
+		transition: .5s;
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
 }
